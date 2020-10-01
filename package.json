@@ -1,0 +1,34 @@
+{
+  "name": "gulp-dev",
+  "version": "1.0.0",
+  "description": "files for gulp task to be used for Wordpress projects.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.2",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jshint": "^2.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hsnyc@github.com/hsnyc/project-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsnyc/project-template/issues"
+  },
+  "homepage": "https://github.com/hsnyc/project-template#readme"
+}
