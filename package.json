@@ -12,6 +12,7 @@
     "gulp": "^4.0.2",
     "gulp-image": "^6.2.1",
     "gulp-jshint": "^2.1.0",
+    "gulp-newer": "^1.4.0",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",

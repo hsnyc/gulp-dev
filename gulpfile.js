@@ -7,6 +7,7 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const image = require('gulp-image');
+const newer = require('gulp-newer');
 const jshint = require('gulp-jshint');
 const stylish = require('jshint-stylish');
 const browserSync = require('browser-sync').create();
@@ -30,14 +31,12 @@ function scssTask(){
         indentType: 'tab',
         indentWidth: '1'
       }).on('error', sass.logError)) // compile SCSS to CSS
-      .pipe(postcss([
-        autoprefixer('last 2 versions', '> 1%')
-      ]))
+      .pipe(postcss(autoprefixer()))
       .pipe(sourcemaps.write(scss + 'maps'))
 	    .pipe(dest(root));
 }
 
-// JS task: concatenates files to main.js and uglifies on prod
+// JS task: concatenates files to main.js
 function jsTask(){
   return src([js + '*.js'])
   .pipe(jshint()) //to ignore some files or directories, create a .jshintignore file and add the files/dirs you want to ignore - https://jshint.com/docs/cli/
